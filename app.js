@@ -1,11 +1,14 @@
 // INITIALIZE LIBRARIES
 const express = require('express')
 const exphbs = require('express-handlebars')
+const router = express.Router();
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const port = process.env.PORT || 3000
-const Littles = require('./models/littles')
+const Little = require('./models/little')
+const User = require('./models/user')
+
 
 const app = express()
 
@@ -19,7 +22,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
 // ROUTES
-const littles = require('./controllers/littles')(app)
+const littles = require('./routes/littles')(app)
+const users = require('./routes/users')(app)
 
 // SERVER
 app.listen(port)
