@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-
 const User = require('../models/user');
+const auth = require('./helpers/auth')
+
 
 module.exports = (app) => {
 
