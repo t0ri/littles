@@ -2,19 +2,15 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const Little = mongoose.model('Little', {
-    type: String,
+    type: Boolean,
     title: String,
     desc: String,
-    status: String,
+    status: Boolean,
 
-    user: {
-        
-    }
-
-    projectId: {
-        type: Schema.Types.ObjectId,
-        ref: 'Little'
-    }
+    user: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    }]
 });
 
 module.exports = Little

@@ -7,9 +7,10 @@
 </head>
 
 <body>
-    <a href="/littles/new">New Little</a>
     <div class="navbar-text">
         {{# if currentUserId}}
+            <a href="/littles/new">New Little</a>
+
             <a class="nav-link" href="/logout">log out</a>
         {{else}}
             <a class="nav-link" href="/login">log in</a>
