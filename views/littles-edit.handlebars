@@ -1,14 +1,14 @@
 <div class="row">
   <div class="col-sm-12 col-sm-offset-6">
-    <form method="POST" action="/littles/{{little._id}}?_method=PUT">
+    <form method="POST" action="/littles/{{littles._id}}?_method=PUT">
       {{> littles-form}}
       <!-- BUTTON -->
       <div class="form-group">
-        <button type="submit">Save Project</button>
+        <button type="submit">Save Little</button>
       </div>
-      <form method="POST" action="/littles/{{little._id}}?_method=DELETE">
+      </form>
+      <form method="POST" action="/littles/{{littles._id}}?_method=DELETE">
           <button type="submit">Delete</button>
       </form>
-    </form>
   </div>
 </div>

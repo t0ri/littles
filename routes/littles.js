@@ -14,7 +14,7 @@ module.exports = (app) => {
 
     // login
     app.get('/login', (req, res, next) => {
-        res.render('login');
+        res.render('users/login');
     });
 
     // POST login
@@ -51,24 +51,21 @@ module.exports = (app) => {
     // Index
     app.get('/', (req, res, next) => {
         User.findById(req.session.userId)
-            .then(littles => {
-                res.render('littles-index', {
-                    littles: littles,
-                });
-            })
-            .catch(err => {
-                console.log(err);
-            })
-    })
-
-    app.get('/littles', (req, res, next) => {
-        User.findById(req.session.userId)
             .populate('posts')
             .then( (user) => {
                 res.render('littles-index', {
                     littles: user.posts,
                 })
             })
+            .catch(err => {
+                res.render('layouts/main')
+            })
+    })
+
+    app.get('/littles/:id', (req, res) => {
+        Little.findById(req.params.id, function(err, littles) {
+            res.render('littles-show', { littles : littles });
+        })
     })
 
 
@@ -94,13 +91,11 @@ module.exports = (app) => {
             })
     });
 
-
-
     // EDIT
     app.get('/littles/:id/edit', (req, res) => {
-        Little.findById(req.params.id, function(err, project) {
+        Little.findById(req.params.id, function(err, littles) {
             res.render('littles-edit', {
-                little: little
+                littles: littles
             });
         })
     })
@@ -108,17 +103,18 @@ module.exports = (app) => {
     // UPDATE
     app.put('/littles/:id', (req, res) => {
         Little.findByIdAndUpdate(req.params.id, req.body)
-            .then(little => {
-                res.redirect(`/littles/${little._id}`)
+            .then(littles => {
+                res.redirect(`/littles/${littles._id}`)
             })
             .catch(err => {
-                console.log(err.message)
+                console.log(err.message, req.params.id)
             })
     })
 
     // DELETE
     app.delete('/littles/:id', function(req, res) {
-        Little.findByIdAndRemove(req.params.id).then((little) => {
+        console.log(req.params.id, "del")
+        Little.findByIdAndRemove(req.params.id).then((littles) => {
             res.redirect('/');
         }).catch((err) => {
             console.log(err.message);

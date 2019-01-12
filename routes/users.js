@@ -6,19 +6,6 @@ const auth = require('./helpers/auth')
 
 module.exports = (app) => {
 
-    //Users index
-    app.get('/users', (req, res, next) => {
-        User.find({}, 'username', function(err, users) {
-            if (err) {
-                console.error(err);
-            } else {
-                res.render('users/index', {
-                    users: users
-                });
-            }
-        });
-    });
-
     // Users new
     app.get('/users/new', (req, res, next) => {
         res.render('users/new');

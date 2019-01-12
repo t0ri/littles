@@ -14,6 +14,7 @@ const app = express()
 
 // CONNECT TO DB
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/littles', { useNewUrlParser: true })
+mongoose.set('useFindAndModify', false);
 
 // MIDDLEWARE
 app.engine('handlebars', exphbs({defaultLayout: 'main'}))
