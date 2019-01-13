@@ -58,7 +58,7 @@ module.exports = (app) => {
                 })
             })
             .catch(err => {
-                res.render('layouts/main')
+                res.redirect('login')
             })
     })
 
