@@ -14,7 +14,7 @@ module.exports = (app) => {
 
     // login
     app.get('/login', (req, res, next) => {
-        res.render('users/login');
+        res.render('layouts/login');
     });
 
     // POST login

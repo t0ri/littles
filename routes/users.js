@@ -8,7 +8,7 @@ module.exports = (app) => {
 
     // Users new
     app.get('/users/new', (req, res, next) => {
-        res.render('users/new');
+        res.render('layouts/signup');
     })
 
     // Users create

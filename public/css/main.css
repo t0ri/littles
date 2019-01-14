@@ -1,0 +1,123 @@
+body {
+    height: 100vh;
+    width: 100vw;
+
+    font-size: 16px;
+}
+
+#login-background {
+    height: 100vh;
+    width: 100vw;
+
+    padding: 0;
+
+    background: rgba(56,57,122,1);
+    background: -moz-linear-gradient(45deg, rgba(56,57,122,1) 0%, rgba(219,92,147,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(56,57,122,1)), color-stop(100%, rgba(219,92,147,1)));
+    background: -webkit-linear-gradient(45deg, rgba(56,57,122,1) 0%, rgba(219,92,147,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(56,57,122,1) 0%, rgba(219,92,147,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(56,57,122,1) 0%, rgba(219,92,147,1) 100%);
+    background: linear-gradient(45deg, rgba(56,57,122,1) 0%, rgba(219,92,147,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38397a', endColorstr='#db5c93', GradientType=1 );
+
+}
+
+.login-form {
+    width: 60vh;
+    height: 28vw;
+
+    position: absolute;
+
+    left: 33.5vw;
+    top: 22%;
+
+    border-color: grey;
+    border-width: 2px;
+
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(48,48,48,1);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(48,48,48,1);
+    box-shadow: 4px 4px 5px 0px rgba(48,48,48,1);
+
+    background-color: white;
+}
+
+#login-littles-logo {
+    text-align: center;
+
+    font-size: 3em;
+    font-weight: 300;
+}
+
+#login-text {
+    margin-top: -20px;
+
+    text-align: center;
+
+    font-size: 1.5em;
+    font-weight: 400;
+
+    color: #404040;
+}
+
+#login-form-fields-flex {
+    height: 60%;
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    /* flex testing border */
+    /* border: 1px solid black; */
+}
+
+#login-form-fields-flex label {
+    display: block;
+
+    padding-bottom: 5px;
+
+    font-size: 1em;
+    color: grey;
+}
+
+#login-form-fields-flex input {
+    width: 20vw;
+    height: 3.5vh;
+
+    font-size: 1.25em;
+}
+
+#login-form-fields-flex input:active, #login-form-fields-flex input:focus   {
+    outline-color: rgba(219,92,147,1);
+}
+
+#login-form-fields-flex #login-form-submit-button {
+    display: inline-block;
+    align-self: flex-end;
+    margin-right: 113px;
+}
+
+#login-form-fields-flex #login-form-submit-button button {
+    width: 5vw;
+    height: 4vh;
+
+    margin-left: 45px;
+
+    background-color: white;
+    border: 1px solid grey;
+}
+
+#login-form-fields-flex #login-form-submit-button button:focus, #login-form-fields-flex #login-form-submit-button button:hover {
+    background-color: rgba(219,92,147,1);
+    border: none;
+
+    color: white;
+}
+
+#login-form-fields-flex #login-form-submit-button p, #login-form-fields-flex #login-form-submit-button p:hover {
+    font-size: .7em;
+    color: grey;
+    text-align: right;
+}

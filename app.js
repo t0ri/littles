@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 app.use(session({ secret: 'secret-unique-code', cookie: { maxAge: 3600000 }, resave: true, saveUninitialized: true }))
 app.use(express.static(__dirname + '/public'));
+
 // app.use('/public', express.static(__dirname + '/public'));
 // app.use(express.static(path.join(__dirname, '/public')));
 
