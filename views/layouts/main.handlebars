@@ -9,8 +9,8 @@
 </head>
 
 <body>
+    {{# if currentUserId}}
     <div id="navbar">
-        {{# if currentUserId}}
             <h1 id="navbar-logo"><a href="/">Littles</h1></a>
             <a href="/littles/new" id="plus-icon-link"><img id="plus-icon" src="/img/plus.png" /></a>
             <div id="profile-icon-dropdown">
@@ -19,10 +19,6 @@
                 <a href="/logout">Log Out</a>
             </div>
         </div>
-
-
-        {{else}}
-            <a class="nav-link" href="/login">log in</a>
         {{/if}}
     </div>
 
