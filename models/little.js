@@ -5,7 +5,6 @@ const Little = mongoose.model('Little', {
     type: Boolean,
     title: String,
     desc: String,
-    status: Boolean,
 
     user: [{
         type: mongoose.Schema.Types.ObjectId,
