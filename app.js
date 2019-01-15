@@ -1,7 +1,7 @@
 // INITIALIZE LIBRARIES
 const express = require('express')
 const exphbs = require('express-handlebars')
-const router = express.Router();
+const router = express.Router()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
