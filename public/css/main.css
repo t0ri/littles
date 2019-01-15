@@ -246,12 +246,13 @@ footer {
     text-align: center;
 }
 
-.statistics-container h1 {
-    margin-top: 40%;
-    font-weight: 400;
+.statistics-container h2 {
+    margin-top: 20%;
+    font-weight: 300;
 }
 
 .statistics-num {
+    margin-top: 20%;
     font-size: 2em;
     font-weight: 500;
 }
