@@ -8,14 +8,18 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div id="navbar">
         {{# if currentUserId}}
+            <h1 id="navbar-logo">Littles</h1>
             <a href="/littles/new" id="plus-icon-link"><img id="plus-icon" src="/img/plus.png" /></a>
             <div id="profile-icon-dropdown">
                 <img id="profile-icon" src="/img/profile.png" />
+            <div id="profile-icon-dropdown-content">
+                <a href="/logout">Log Out</a>
             </div>
+        </div>
 
-            <a class="nav-link" href="/logout">log out</a>
+
         {{else}}
             <a class="nav-link" href="/login">log in</a>
         {{/if}}
