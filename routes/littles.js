@@ -62,6 +62,12 @@ module.exports = (app) => {
             })
     })
 
+    // New
+    app.get('/littles/new', (req, res, next) => {
+        res.render('littles-new', {});
+    })
+
+
     app.get('/littles/:id', (req, res) => {
         Little.findById(req.params.id, function(err, littles) {
             res.render('littles-show', { littles : littles });
@@ -69,10 +75,6 @@ module.exports = (app) => {
     })
 
 
-    // New
-    app.get('/littles/new', (req, res, next) => {
-        res.render('littles-new', {});
-    })
 
     // Creates a new post for logged in user:
     app.post('/littles', (req, res, next) => {
@@ -120,5 +122,7 @@ module.exports = (app) => {
             console.log(err.message);
         })
     })
+
+
 
 }
