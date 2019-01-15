@@ -279,6 +279,9 @@ footer {
 
 #all-little-cards {
     margin-top: 3vh;
+
+    display: flex;
+    flex-flow: column-reverse nowrap;
 }
 
 .little-card {
