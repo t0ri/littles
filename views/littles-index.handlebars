@@ -1,14 +1,14 @@
 <div id="statistics-row-container">
     <div class="statistics-container" id="wins-statistic-container">
-        <p>wa</p>
-    </div>
-
-    <div class="statistics-container" id="nerves-statistic-container">
-        <p>wa</p>
+        <h1>Wins</h1>
     </div>
 
     <div class="statistics-container" id="total-statistic-container">
-        <p>wa</p>
+        <h1>Littles This Year</h1>
+    </div>
+
+    <div class="statistics-container" id="nerves-statistic-container">
+        <h1>Nerves</h1>
     </div>
 </div>
 
@@ -16,10 +16,10 @@
 
 <div id="all-little-cards">
 {{#each littles}}
-    <div class="little-card little-card-{{this.type}}">
+    <a href="/littles/{{this.id}}"><div class="little-card little-card-{{this.type}}">
         <h2 class="little-card-title">{{this.title}}</h2>
         <p class="little-card-edit-button"><a href="/littles/{{this._id}}/edit">Edit</a>
-    </div>
+    </div></a>
 {{/each}}
 </div>
 <script src="/js/main.js"></script>

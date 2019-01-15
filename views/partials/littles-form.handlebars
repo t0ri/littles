@@ -1,11 +1,11 @@
-<fieldset>
-  <!-- TITLE -->
   <div class="form-group" name="type" id="type">
-    <label for="littles-type">:/</label>
-    <input class="form-control" type="radio" value="false" name="type"/>
+    <label for="littles-type">:/
+        <input class="form-control" type="radio" name="type" value="true"/>
+    </label>
 
-    <label for="littles-type2">:)</label>
-    <input class="form-control" type="radio" name="type" value="true"/>
+    <label for="littles-type2">:)
+        <input class="form-control" type="radio" name="type" value="false"/>
+    </label>
   </div>
 
   <div class="form-group">
@@ -15,6 +15,5 @@
 
   <div class="form-group">
     <label for="littles-desc">Description</label><br>
-    <input class="form-control" id="desc" type="text" name="desc" value="{{littles.desc}}"/>
+    <textarea class="form-control" id="desc" type="text" name="desc" rows=4/>{{littles.desc}}</textarea>
   </div>
-</fieldset>
