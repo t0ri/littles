@@ -7,10 +7,14 @@ Littles was a solo-project, developed in seven days during an Intensive Week (on
 
 ![View of live product.](https://i.gyazo.com/b80b6743f32095f10df5c4bb22201edc.png)
 
-### Technologies Used
+## Technologies Used
 * [Node.js](https://nodejs.org/en/)
 * [Express](https://expressjs.com/)
 * [Handlebars](https://handlebarsjs.com/)
 * [MongoDB](https://www.mongodb.com/)
 
-### 
+## To Do
+* Create more dashboard features, and user configuration of dashboard
+* More user settings: delete account/data
+* Chrome extension to easily log a Little without viewing dashbaord
+* Refactor CSS
