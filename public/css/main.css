@@ -209,3 +209,36 @@ body {
     color: grey;
     text-align: right;
 }
+
+#statistics-row-container {
+    width: 90vw;
+
+    margin-left: 5vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statistics-container {
+    height: 35vh;
+    width: 25vw;
+
+    margin-top: 5vh;
+
+    border-radius: 5px;
+
+    background-color: white;
+    box-shadow: 2px 2px 5px #eff2f7;
+}
+
+.statistics-container:first-of-type {
+
+}
+
+.statistics-container {
+}
+
+.statistics-container {
+}
