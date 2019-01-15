@@ -9,7 +9,7 @@ body {
 
 #navbar {
     width: 100vw;
-    height: 7vh;
+    height: 6vh;
 
     margin-top: -8px;
     margin-left: -8px;
@@ -267,18 +267,61 @@ body {
     align-items: center;
 }
 
-.littles-card-true {
-    color: blue;
+#all-little-cards {
+    margin-top: 3vh;
 }
 
 .little-card {
-    height: 10vh;
+    height: 8vh;
     width: 50vw;
 
-    margin-top: 5vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 
+    margin: auto;
+    margin-top: 2vh;
+
+    border: 2px solid;
     border-radius: 5px;
 
     background-color: white;
+
     box-shadow: 2px 2px 5px #eff2f7;
+}
+
+.little-card h2 {
+    display: inline-block;
+
+    max-width: 70%;
+
+    margin-left: 20px;
+
+    font-size: 1.5em;
+    font-weight: 400;
+
+    color: white;
+}
+
+.little-card-edit-button {
+    display: inline;
+
+    margin-right: 20px;
+}
+
+.little-card-edit-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.little-card-true {
+    border-color: rgba(56,57,122,1);
+    background-color: rgba(56,57,122,1);
+}
+
+.little-card-false {
+    border-color: rgba(219,92,147,1);
+    background-color: rgba(219,92,147,1);
 }
