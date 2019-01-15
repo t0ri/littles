@@ -17,13 +17,15 @@
   },
   "homepage": "https://github.com/t0ri/littles#readme",
   "dependencies": {
-    "express": "4.16.0",
     "bcrypt": "^3.0.3",
     "body-parser": "^1.18.3",
+    "express": "4.16.0",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
     "method-override": "^3.0.0",
     "mongodb": "^3.1.10",
-    "mongoose": "^5.4.3"
+    "mongoose": "^5.4.3",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
   }
 }

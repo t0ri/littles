@@ -9,6 +9,8 @@ const port = process.env.PORT || 3000
 const Little = require('./models/little')
 const User = require('./models/user')
 const session = require('express-session')
+const favicon = require('serve-favicon')
+const path = require('path')
 
 const app = express()
 
@@ -23,6 +25,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 app.use(session({ secret: 'secret-unique-code', cookie: { maxAge: 3600000 }, resave: true, saveUninitialized: true }))
 app.use(express.static(__dirname + '/public'));
+app.use(favicon(path.join(__dirname+'/favicon.ico')));
+
 
 // app.use('/public', express.static(__dirname + '/public'));
 // app.use(express.static(path.join(__dirname, '/public')));

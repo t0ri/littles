@@ -53,8 +53,23 @@ module.exports = (app) => {
         User.findById(req.session.userId)
             .populate('posts')
             .then( (user) => {
+                let trueCount = 0;
+                let falseCount = 0;
+                for(let item of user.posts){
+                    if (item.type == true){
+                        trueCount++;
+                    }else{
+                        falseCount++;
+                    }
+                }
+                let totalCount= trueCount+ falseCount;
+                console.log(`trueCount is ${trueCount} \n falsecount is ${falseCount}`)
+                console.log(user.posts[0]);
                 res.render('littles-index', {
                     littles: user.posts,
+                    trueCount,
+                    falseCount,
+                    totalCount
                 })
             })
             .catch(err => {
