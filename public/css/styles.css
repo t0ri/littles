@@ -1,0 +1,477 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+  background-color: #ebeff2;
+}
+
+a, #profile-icon-dropdown-content a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  height: 5vh;
+}
+
+#navbar {
+  width: 100vw;
+  height: 6vh;
+  margin-top: -8px;
+  margin-left: -8px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  background-color: white;
+}
+
+#navbar-logo {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: 25px;
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+#profile-icon-dropdown {
+  height: 35px;
+  width: 35px;
+  margin-right: 25px;
+  margin-top: 7px;
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+#profile-icon-dropdown:hover #profile-icon-dropdown-content {
+  display: block;
+}
+#profile-icon-dropdown img {
+  height: 20px;
+  width: 20px;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+
+#profile-icon-dropdown-box {
+  position: relative;
+  display: inline-block;
+}
+
+#profile-icon-dropdown-content {
+  display: none;
+  position: absolute;
+  width: 70px;
+  min-height: auto;
+  padding: 10px;
+  margin-top: 8px;
+  margin-left: -40px;
+  z-index: 1;
+  border: 1px solid #ebeff2;
+  background-color: white;
+}
+#profile-icon-dropdown-content a {
+  padding-left: 6px;
+}
+#profile-icon-dropdown-content a:hover {
+  color: #4A78D4;
+}
+
+#plus-icon-link img {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  margin-top: 18px;
+}
+
+#login-background {
+  height: 100vh;
+  width: 100vw;
+  background: #38397a;
+  background: -webkit-linear-gradient(left, #eff3fb 0%, #e6fbfc 33%, #eff3fb 66%, #e6fbfc 100%);
+  background: -moz-linear-gradient(left, #eff3fb 0%, #e6fbfc 33%, #eff3fb 66%, #e6fbfc 100%);
+  background: -o-linear-gradient(left, #eff3fb 0%, #e6fbfc 33%, #eff3fb 66%, #e6fbfc 100%);
+  background: linear-gradient(left, #eff3fb 0%, #e6fbfc 33%, #eff3fb 66%, #e6fbfc 100%);
+}
+
+.login-form {
+  width: 60vh;
+  height: 28vw;
+  position: absolute;
+  left: 33.5vw;
+  top: 22%;
+  border-color: grey;
+  border-width: 2px;
+  -webkit-box-shadow: 2px 2px 10px 0px #303030;
+  -moz-box-shadow: 2px 2px 10px 0px #303030;
+  box-shadow: 2px 2px 10px 0px #303030;
+  background-color: white;
+}
+
+#login-littles-logo {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+#login-text {
+  margin-top: -20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #404040;
+}
+
+#login-form-fields-flex {
+  height: 60%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#login-form-fields-flex label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 1em;
+  color: grey;
+}
+#login-form-fields-flex input {
+  width: 20vw;
+  height: 3.5vh;
+  font-size: 1.25em;
+}
+#login-form-fields-flex input:active, #login-form-fields-flex input:focus {
+  outline-color: #234995;
+}
+#login-form-fields-flex #login-form-submit-button {
+  display: inline-block;
+  align-self: flex-end;
+  margin-right: 113px;
+}
+#login-form-fields-flex #login-form-submit-button button {
+  width: 5vw;
+  height: 4vh;
+  margin-left: 45px;
+  background-color: white;
+  border: 1px solid grey;
+}
+#login-form-fields-flex #login-form-submit-button button:focus, #login-form-fields-flex #login-form-submit-button button:hover {
+  background-color: #5EE2EB;
+  border: none;
+  color: white;
+}
+#login-form-fields-flex #login-form-submit-button p {
+  font-size: 0.7em;
+  color: grey;
+  text-align: right;
+}
+
+#statistics-row-container {
+  width: 90vw;
+  margin-left: 5vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.statistics-container {
+  height: 35vh;
+  width: 25vw;
+  margin-top: 5vh;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px #eff2f7;
+  -moz-box-shadow: 2px 2px 5px #eff2f7;
+  box-shadow: 2px 2px 5px #eff2f7;
+  font-size: 1.25em;
+  text-align: center;
+}
+.statistics-container:first-of-type {
+  color: #4A78D4;
+}
+.statistics-container:nth-of-type(2) {
+  color: #000;
+}
+.statistics-container:last-of-type {
+  color: #38397a;
+}
+.statistics-container h2 {
+  margin-top: 20%;
+  font-weight: 300;
+}
+
+.statistics-num {
+  margin-top: 20%;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#littles-header {
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+#all-little-cards {
+  margin-top: 3vh;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+.little-card {
+  height: 8vh;
+  width: 50vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2vh;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px #ebeff2;
+  -moz-box-shadow: 2px 2px 5px #ebeff2;
+  box-shadow: 2px 2px 5px #ebeff2;
+}
+.little-card h2 {
+  display: inline-block;
+  max-width: 40vw;
+  margin-left: 20px;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: white;
+}
+
+.little-card-edit-button {
+  display: inline;
+  margin-right: 20px;
+}
+.little-card-edit-button a, .little-card-edit-button #profile-icon-dropdown-content a, #profile-icon-dropdown-content .little-card-edit-button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.little-card-true {
+  border-color: #38397a;
+  background-color: #38397a;
+}
+
+.little-card-false {
+  border-color: #4A78D4;
+  background-color: #4A78D4;
+}
+
+#littles-show {
+  height: 40vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  background-color: white;
+  border-width: 1px;
+  color: #000;
+  font-size: 1.25em;
+}
+#littles-show p {
+  margin-left: 70px;
+  margin-right: 70px;
+  font-weight: 300;
+}
+#littles-show a {
+  color: #000;
+  font-size: 0.75em;
+}
+#littles-show h2 {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  margin: auto;
+  font-size: 2em;
+}
+#littles-show.little-card-true h2 {
+  color: #38397a;
+}
+#littles-show.little-card-false h2 {
+  color: #4A78D4;
+}
+
+fieldset {
+  height: auto;
+  width: 20vw;
+  margin: auto;
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+[type=radio] {
+  position: absolute;
+}
+
+#littles-form {
+  width: 60vh;
+  height: 28vw;
+  position: absolute;
+  left: 33.5vw;
+  top: 22%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-color: grey;
+  border-width: 2px;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(48, 48, 48, 0.5);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(48, 48, 48, 0.5);
+  box-shadow: 4px 4px 5px 0px rgba(48, 48, 48, 0.5);
+  background-color: white;
+}
+#littles-form input[type=text] {
+  display: block;
+  width: 24.5vw;
+  padding: 5px;
+  font-size: 1.25em;
+  color: #000;
+  border: 1px solid grey;
+}
+#littles-form input[type=text]:active, #littles-form input[type=text]:focus {
+  outline-color: #38397a;
+}
+#littles-form textarea {
+  display: block;
+  width: 25vw;
+  padding-bottom: 5px;
+  border-color: grey;
+  font-size: 1em;
+  color: #000;
+}
+#littles-form textarea:active, #littles-form textarea:focus {
+  outline-color: #38397a;
+}
+#littles-form button {
+  width: 5vw;
+  height: 4vh;
+  background-color: white;
+  border: 1px solid grey;
+}
+#littles-form button:focus {
+  background-color: #38397a;
+  border: none;
+  outline: #38397a;
+  color: white;
+}
+#littles-form #type {
+  font-size: 4em;
+  font-family: monospace;
+  color: #000;
+}
+#littles-form label {
+  color: grey;
+}
+
+#littles-edit-form-delete-button {
+  z-index: 999;
+}
+#littles-edit-form-delete-button button {
+  position: relative;
+  margin-left: 48.5%;
+  margin-top: 600px;
+  border: none;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
